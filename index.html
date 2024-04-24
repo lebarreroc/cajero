@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cajero Automático</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="sr chancho.jpg" alt="Logo">
+        <ul>
+            <li><a href="#" onclick="verSaldo()">Saldo Cajero</a></li>
+            <li><a href="#" onclick="recargarCajero()">Recargar Cajero</a></li>
+        </ul>
+    </header>
+    <h2>Cajero Automático</h2>
+    <div class="container">
+        <label for="amount">Ingrese el monto a retirar:</label>
+        <input type="number" id="amount" min="0" step="1">
+        <button onclick="withdraw()">Retirar</button>
+        <button onclick="clearInput()">Borrar</button>
+        <div id="withdraw-result"></div>
+        <div id="saldo-result"></div>
+        <div id="total-disponible"></div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
